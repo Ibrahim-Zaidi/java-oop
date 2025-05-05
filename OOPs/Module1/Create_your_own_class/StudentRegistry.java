@@ -5,7 +5,7 @@ public class StudentRegistry {
         Student std1  = new Student();
         Student std2  = new Student();
 
-        std1.setStudent("1", "adam", 54, true);
+        std1.setStudent("1", "adam", 888, true);
         std2.setStudent("2", "ibrahim", 80, true);
 
 

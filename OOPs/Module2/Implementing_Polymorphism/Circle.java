@@ -4,16 +4,33 @@ package java_oop.OOPs.Module2.Implementing_Polymorphism;
 public class Circle extends Shape {
     // Step 1: Declare private variable for radius
     // Hint: Use double for the radius
+
+    private double radius;
     
     // Step 2: Create a constructor that takes name, color, and radius as parameters
     // Hint: Use super() to call the parent constructor and then initialize radius
-    
+
+    public Circle(double radius) {
+        super(name, color);
+        this.radius = radius;
+    }
+
     // Step 3: Create getter method for radius
     // Hint: public double getRadius()
-    
+
+    public double getRadius() {
+        return this.radius;
+    }
+
     // Step 4: Override the area() method to calculate the area of a circle
     // Hint: Area of a circle = π * radius * radius (use Math.PI)
-    
+
+    @Override
+    public double area() {
+        return Math.PI * radius * radius;
+    }
+
+
     // Step 5: Override the perimeter() method to calculate the perimeter (circumference) of a circle
     // Hint: Perimeter of a circle = 2 * π * radius (use Math.PI)
     

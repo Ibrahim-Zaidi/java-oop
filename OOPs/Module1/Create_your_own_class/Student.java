@@ -1,4 +1,5 @@
 package java_oop.OOPs.Module1.Create_your_own_class;
+
 public class Student {
 
     private String studentId , name;
@@ -35,15 +36,16 @@ public class Student {
     public void displayInfo() {
         System.out.println("student id is : " + studentId + "/ his name is : " + name + "/ grade is :" + grade + "/ and his active status :" + isActive);
     }
+
     public String letterGrade() {
         if (grade >= 90 && grade <= 100) {
-            return  "you have an A";
+            return  "you have an A Grade";
         } else if (grade >= 80 && grade < 90) {
-            return "you have a B";
+            return "you have a B Grade";
         } else if (grade >= 70 && grade < 80) {
-            return  "you have a C";
+            return  "you have a C Grade";
         } else if (grade >= 60 && grade < 70) {
-            return  "you took a D";
+            return  "you took a D Grade";
         } else {
             return "F grade / you failed";
         }
@@ -53,9 +55,9 @@ public class Student {
 
     public String isPassing() {
         if (grade >= 60) {
-            return  "congratulation" + name + "you passed!";
+            return  "congratulation -" + name + "- you passed!";
         };
-        return "you didnt make it " + name + ", we wish you the best next time ";
+        return "you didnt make it -" + name + "- , we wish you the best next time ";
 
     }
 
